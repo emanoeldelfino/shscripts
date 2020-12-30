@@ -5,7 +5,7 @@ GREEN='\e[1;32m'
 END='\e[0m'
 
 if ls -l "$PWD"/* &> /dev/null; then
-	echo "${RED}Diretório não está vazio.${END}"
+	echo -e "${RED}Diretório não está vazio.${END}"
 else
 	echo -e "${GREEN}Diretório está vazio.${END}"
 fi
