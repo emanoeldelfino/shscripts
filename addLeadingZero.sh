@@ -1,0 +1,3 @@
+for file in $(ls | grep -E '^[0-9]\.'); do
+  mv -- "$file" "0${file}"
+done
